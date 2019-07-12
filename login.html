@@ -1,4 +1,4 @@
-<html>
+ <html>
 <head>
 	<title> Ê—Êœ »Â ”«Ì  </title>
 	<style>
@@ -18,15 +18,31 @@
 <body  background='Pic1.png'>
 	<div>
 		<h1> ”«„«‰Â „œÌ—Ì  —ÊÌœ«œÂ« <h1>
-		<form method="post"  action="login.php">
-			<input style="border-radius: 25px;width:200px; height:30px;"
-			 type="text" name="username">
-				<span style="font-size:20px;"> ‰«„ ò«—»—Ì </span><br><br>
-			<input style="border-radius: 25px;width:200px; height:30px;"
-			 type="password" name="password">
-				<span style="font-size:20px;"> ê–—Ê«éÂ </span><br><br>
-			<button class="submit" style="border-radius: 25px; width:100px; height:30px;
-			font-weight:bold;font-size:15px;"> Ê—Êœ</button>
+		<form method="post"  action="save.php">
+			<input style="border-radius: 25px;width:200px; height:30px;padding :5px;text-align:right;"
+			 type="text" placeholder="First Name" name="Fname">
+				<span style="font-size:20px;"> ‰«„ </span><br><br>
+			<input style="border-radius: 25px;width:200px; height:30px;padding :5px;text-align:right;"
+			 type="text" placeholder="Last  Name" name="Lname">
+				<span style="font-size:20px;"> ‰«„ Œ«‰Ê«œêÌ</span><br><br>
+
+
+			<input style="border-radius: 25px;width:200px; height:30px;padding :5px;text-align:right;"
+			 type="text" placeholder="Email Address" name="Email">
+				<span style="font-size:20px;"> «Ì„Ì·  </span><br><br>
+ 	<button class="submit" style="border-radius: 25px; width:100px; height:30px;
+			font-weight:bold;font-size:15px;" onclick="Login_Click_Handler();"> Ê—Êœ</button>
+	
+        <script>
+            function Login_Click_Handler() {
+                window.setTimeout( 
+                    function(){ 
+                        window.alert("Login.com");
+                    },
+
+                );
+            }
+        </script>
 		</form>
 	</div>
 
