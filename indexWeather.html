@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather page</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body
+    style="background-image: linear-gradient(to bottom, lightblue , white); background-repeat: no-repeat;"
+  >
+    <div style="max-width:550px; margin:0 auto;">
+      <header>
+        <h1>Internet Engineering</h1>
+      </header>
+
+      <section id="main">
+        <h2 id="w-name">London</h2>
+        <h3>
+          <img
+            id="w-icon"
+            src="https://openweathermap.org/img/w/02d.png"
+            alt="Weather"
+            width="50"
+            height="50"
+          /><span id="w-degree">10</span> &#8451;
+        </h3>
+        <p id="w-description">light intensity drizzle rain</p>
+        <p id="w-updated-time">01:25 Apr 27</p>
+        <table>
+          <tbody>
+            <tr>
+              <td>Wind</td>
+              <td><span id="w-wind"></span> m/s</td>
+            </tr>
+            <tr>
+              <td>Cloudiness</td>
+              <td><span id="w-cloudiness"></span>%</td>
+            </tr>
+            <tr>
+              <td>Pressure</td>
+              <td><span id="w-pressure"></span> hpa</td>
+            </tr>
+            <tr>
+              <td>Humidity</td>
+              <td><span id="w-humidity"></span>%</td>
+            </tr>
+            <tr>
+              <td>Sunrise</td>
+              <td id="w-sunrise">09:12</td>
+            </tr>
+            <tr>
+              <td>Sunset</td>
+              <td id="w-sunset">23:43</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <button onclick="getWeather();">Get weather information</button>
+
+      <footer>
+        <h6>University of Guilan</h6>
+      </footer>
+
+      <script src="weather.js"></script>
+    </div>
+  </body>
+</html>
